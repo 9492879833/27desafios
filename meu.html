@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+    
+    <h1>meu Arrays em JavaScript</h1>
+    <h2>O método find()</h2>
+    <h3>Feito por mim: Wadson</h3>
+    
+    <p>Clique em "Testar" para retornar o valor do primeiro elemento no array que seja maior do que este número:</p>
+    
+    <p><input type="number" id="ageToCheck"></p>
+    
+    <button onclick="myFunction()">Testar</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    function myFunction() {
+      const ages = [5, 9, 18, 25];
+      const ageToCheck = parseInt(document.getElementById("ageToCheck").value);
+      const result = ages.find(age => age > ageToCheck);
+      document.getElementById("demo").innerHTML = result ? "O primeiro elemento acima de " + ageToCheck + " é " + result + "." : "Nenhum elemento encontrado acima de " + ageToCheck + ".";
+    }
+    </script>
+    
+    </body>
+    </html>
+    
+
